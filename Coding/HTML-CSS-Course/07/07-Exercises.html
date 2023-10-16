@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=	, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .catround {
+      width: 200px;
+      border-radius: 30px;
+    }
+    .catcenter {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    
+    .catball {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 200px;
+    }
+
+    .google {
+      width: 300px;
+      height: 25px;
+      margin: 10px;
+      border: none ;
+      border-radius: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .Twitter {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+    }
+    .Tweet {
+      border: none;
+      font-size: 15px;
+      vertical-align: middle;
+    }
+
+    .Tweet-button {
+      background-color: rgb(29, 155, 246);
+      border: none;
+      border-width: 1px;
+      padding: 10px;
+      color: white;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 7px;
+      padding-bottom: 7cap;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+      vertical-align: middle;
+    }
+
+    .Tweet-button:hover {
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    }
+    
+  </style>
+</head>
+<body>
+  <img class="catround" src="cat.webp">
+  <img class="catcenter" src="cat.webp">
+  <img class="catball" src="cat.webp">
+
+  <p>
+    <input class="google" type="text" placeholder=" Search Google or type an URL">
+  </p>
+
+  <p>
+    <img class="catball Twitter" src="cat.webp">
+    <input type="text" class="Tweet" placeholder="Whats happening?">
+    <button class="Tweet-button">Tweet</button>
+  </p>
+</body>
+</html>

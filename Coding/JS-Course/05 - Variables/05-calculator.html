@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      .numberButton{
+        background-color: rgb(54, 54, 54);
+        border-color: rgb(54, 54, 54);
+        color: white;
+      }
+
+      .otherButton {
+        background-color: orange;
+        border-color: orange;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Calculator <br>
+      <br>
+      <button class="numberButton";
+      onclick="calculation +='1';
+      console.log(calculation)"
+      >
+        1
+      </button>
+
+      <button class="numberButton"
+      onclick="calculation +='2';
+      console.log(calculation)">
+        2
+      </button>
+
+      <button class="numberButton"
+      onclick="calculation +='3';
+      console.log(calculation)">
+        3
+      </button>
+
+      <button class="otherButton"
+      onclick="calculation +='+';
+      console.log(calculation)">
+        +
+      </button> <br>
+      <br>
+
+      <button class="numberButton"
+      onclick="calculation +='4';
+      console.log(calculation)">
+        4
+      </button>
+
+      <button class="numberButton"
+      onclick="calculation +='5';
+      console.log(calculation)">
+        5
+      </button>
+
+      <button class="numberButton"
+      onclick="calculation +='6';
+      console.log(calculation)">
+        6
+      </button>
+
+      <button class="otherButton"
+      onclick="calculation +='-';
+      console.log(calculation)">
+        -
+      </button> <br>
+      <br>
+
+      <button class="numberButton"
+      onclick="calculation +='7';
+      console.log(calculation)">
+        7
+      </button>
+
+      <button class="numberButton"
+      onclick="calculation +='8';
+      console.log(calculation)">
+        8
+      </button>
+
+      <button class="numberButton"
+      onclick="calculation +='9';
+      console.log(calculation)">
+        9
+      </button>
+
+      <button class="otherButton"
+      onclick="calculation +='*';
+      console.log(calculation)">
+        *
+      </button> <br>
+      <br>
+
+      <button class="otherButton"
+      onclick="calculation +='.';
+      console.log(calculation)">
+        .
+      </button>
+
+      <button class="numberButton"
+      onclick="calculation +='0';
+      console.log(calculation)">
+        0
+      </button>
+
+      <button class="otherButton"
+      onclick="calculation = eval(calculation);
+      console.log(calculation)">
+        =
+      </button>
+
+      <button class="otherButton"
+      onclick="calculation +='/';
+      console.log(calculation)">
+        /
+      </button> <br>
+      <br>
+
+      <button class="otherButton"
+      onclick="calculation = '';
+      console.log('Cleared.')">
+        Clear
+      </button> <br>
+    </p>
+
+    <script>
+      let calculation = '';
+    </script>
+  </body>
+</html>

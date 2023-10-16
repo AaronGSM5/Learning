@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="12-TodoList.css">
+  </head>
+
+  <body>
+    <p>Todo List</p>
+
+    <div class="todo-input-grid">
+      <input placeholder="Todo name" class="js-value-input name-input">
+      <input type="date" class="js-due-date-input due-date-input">
+      <button class="add-todo-button js-add-todo-button">Add</button>
+    </div>
+
+    <div class="js-todo-list todo-grid"></div>
+    
+
+
+    <script>
+      const todoList = JSON.parse(localStorage.getItem('todoList')) || [{
+        name: '',
+        dueDate: ''
+      }, {
+        name: '',
+        dueDate: ''
+      }];
+
+      renderTodoList();
+
+      function renderTodoList() {
+        let todoListHTML = '';
+
+        todoList.forEach((todoObject, index) => {
+          //const name = todoObject.name;
+          //const dueDate = todoObject.dueDate;
+          const {name, dueDate} = todoObject;
+          
+          if (todoObject.name !== '' || todoObject.dueDate !== '') {
+            const html = 
+              `<div>${name}</div>
+              <div>${dueDate}</div>
+              <button class="delete-todo-button js-delete-todo-button">Delete</button>`;
+            todoListHTML += html;
+          }
+        });
+        document.querySelector('.js-todo-list')
+          .innerHTML = todoListHTML;
+
+          document.querySelectorAll('.js-delete-todo-button')
+            .forEach((deleteButton, index) => {
+              deleteButton.addEventListener('click', () => {
+                deleteTodo(index);
+              });
+            });
+
+        }
+
+      function deleteTodo(i) {
+        todoList.splice(i, 1)
+        renderTodoList();
+      }
+
+      document.querySelector('.js-add-todo-button')
+        .addEventListener('click', () => {
+          addToArray();
+        })
+
+      function addToArray() {
+        const inputValue = document.querySelector('.js-value-input');
+        const name = inputValue.value
+        const dateInputElement = document.querySelector('.js-due-date-input');
+        const dueDate = dateInputElement.value
+
+        if (name !== '' || dueDate !== '') {
+          todoList.push({
+            //name: name,
+            //dueDate: dueDate
+            name,
+            dueDate
+          });
+          inputValue.value = '';
+          dateInputElement.value = '';
+          renderTodoList();
+          saveToStorage();
+        }
+        else {
+          alert('Name or Date is missing.')
+        }
+      }
+
+      function saveToStorage () {
+        localStorage.setItem('todoList', JSON.stringify(todoList));
+      }
+      
+    </script>
+  </body>
+</html>
