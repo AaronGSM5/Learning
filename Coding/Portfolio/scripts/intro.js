@@ -1,19 +1,27 @@
+// VARIABLES
+// VARIABLES
+const intro = document.querySelector('.intro')
 
-let intro = document.querySelector('.intro')
+const page = document.querySelector('.page')
+const title = document.querySelector('.header-title')
 
-let page = document.querySelector('.page')
-let title = document.querySelector('.header-title')
+const content = document.querySelector('.content')
+const hallo = document.getElementById("hallo")
+const text = document.getElementById("text")
 
-let navLinks = document.querySelector('.nav-links-container')
-let about = document.querySelector('.about')
-let work = document.querySelector('.work')
-let contact = document.querySelector('.contact')
+const navLinks = document.querySelector('.nav-links-container')
+const about = document.querySelector('.about')
+const work = document.querySelector('.work')
+const contact = document.querySelector('.contact')
 
 
-let rBorder = document.querySelector('.right-right-border')
-let bBorder = document.querySelector('.right-bottom-border')
-let lBorder = document.querySelector('.left-left-border')
-let tBorder = document.querySelector('.left-top-border')
+const rBorder = document.querySelector('.right-right-border')
+const bBorder = document.querySelector('.right-bottom-border')
+const lBorder = document.querySelector('.left-left-border')
+const tBorder = document.querySelector('.left-top-border')
+// VARIABLES
+// VARIABLES
+
 
 window.addEventListener('DOMContentLoaded', () =>{
 
@@ -36,7 +44,6 @@ window.addEventListener('DOMContentLoaded', () =>{
     tBorder.style.left = '-30px'
 
     intro.style.opacity = 0
-
   }, 1000);
 
 setTimeout(() => {
@@ -55,8 +62,17 @@ setTimeout(() => {
     setTimeout(() => {
       about.style.opacity = '1'
       work.style.opacity = '1'
-      contact.style.opacity = '1'
-    }, 500);
 
+      setTimeout(() => {
+        content.style.opacity = '1'
+        setTimeout(() => {
+          hallo.style.textShadow = '0 0 50px white'
+          setTimeout(() => {
+            hallo.style.textShadow = '0 0 10px white'
+          }, 200);
+        }, 500);
+      }, 1000);
+    }, 500);
   }, 500);
-}, 2200)})
+}, 2200);
+})
