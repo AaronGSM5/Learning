@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --text: #1b0912;
+  --background: #fdf7fa;
+  --primary: #d37373;
+  --secondary: #e7ccb1;
+  --accent: #9b6631;
+}
+
+* {
+  color: var(--text);
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--background);
+}
+
+.window {
+  width: 80%;
+  height: 60%;
+  overflow: hidden;
+  background-color: var(--secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.wand-tip {
+  width: 50px;
+  aspect-ratio: 13/16;
+  background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 50%, rgba(245,245,245,1) 100%);
+}
+
+.wand {
+  width: 50px;
+  aspect-ratio: 1/20;
+  background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(60,60,60,1) 50%, rgba(10,10,10,1) 100%);
+  position: absolute;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 1s ease;
+  z-index: 101;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(30%);
+  border-radius: 40px;
+  z-index: 100;
+}
+
+.item {
+  background-color: white;
+  width: 15%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  transform: translateY(-50%);
+  position: absolute;
+  box-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+  overflow: hidden;
+  border: 1px white solid;
+}
+
+.item .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.item img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.i2 {
+  top: 36%;
+  left: 16%;
+  transform: rotate(-10deg);
+}
+
+.i3 {
+  top: 44%;
+  left: 30%;
+  transform: rotate(3deg);
+}
+
+.i4 {
+  top: 31%;
+  left: 44%;
+  transform: rotate(15deg);
+}
+
+.i5 {
+  top: 40%;
+  left: 58%;
+  transform: rotate(5deg);
+}
+
+.i6 {
+  top: 40%;
+  left: 72%;
+  transform: rotate(-11deg);
+}
