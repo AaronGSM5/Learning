@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+
+  </head>
+  <body>
+
+    <button class="dom">Start</button>
+    <p>
+    <button class="js-add-to-cart">Add to cart</button>
+    </p>
+    <p class="ptext"></p>
+
+    <p>
+      <button class="js-add">Add</button>
+      <button class="js-remove">Remove</button>
+    </p>
+
+    <script>
+
+        document.querySelector('.dom')
+        .addEventListener('click', () => finish());
+
+        document.querySelector('.js-add-to-cart')
+        .addEventListener('click', () => added());
+
+        document.querySelector('.js-add')
+        .addEventListener('click', () => message++);
+
+        document.querySelector('.js-remove')
+        .addEventListener('click', () => {
+            if (!message - 1 < 0) {
+                message--
+            }
+        });
+
+
+
+      function finish() {
+        document.querySelector('.dom')
+            .innerText = 'Loading'
+         setTimeout(() => {
+          document.querySelector('.dom')
+            .innerText = 'Finished'
+        }, 1000) 
+      }
+      
+      let timeoutId;
+
+      function added() {
+        document.querySelector('.ptext')
+            .innerText = 'Added!'
+
+            clearTimeout(timeoutId);
+
+        timeoutId =setTimeout(() => {
+          document.querySelector('.ptext')
+            .innerText = ''
+        },2000)
+      }
+      
+
+      let message = 0
+      
+      isApp = true
+      setInterval(() => {
+        if (message === 0) {
+          document.title = 'App'
+        }
+        else if (message > 0) {
+          if(isApp === true) {
+          document.title = `(${message}) Messages`
+          isApp = false
+        }
+        else {
+          isApp = true
+          document.title = 'App'
+        }
+        }
+      }, 1000)
+
+    </script>
+  </body>
+</html>

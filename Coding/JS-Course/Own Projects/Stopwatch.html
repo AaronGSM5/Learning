@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stop watch</title>
+  <style>
+    body {
+      background-color: rgb(23, 23, 23);
+    }
+    .timer-show, .Title {
+      font-family: Arial;
+      font-size: 80px;
+      color: white;
+    }
+
+    .start-button, .reset-button {
+      font-family: Arial;
+      font-size: 30px;
+      color: white;
+      background-color: rgb(23, 23, 23);
+      border-color: white;
+      padding: 20px;
+      margin: 10px;
+      margin-top: 0px;
+      width: 200px;
+    }
+
+    .container {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <p class="js-timer-show timer-show">0h 0m 0s</p>
+    <p>
+      <button class="js-start-button start-button" onclick="startstopTimer()">Start Timer</button>
+      <button class="js-reset-button reset-button" onclick="resetTimer()" >Reset timer</button>
+    </p>
+  </div>
+
+  <script>
+    let timer  = {
+    seconds: 0,
+    minutes: 0,
+    hours: 0,
+    }
+
+    function updateTimer() {
+      document.querySelector('.timer-show')
+        .innerHTML = `${timer.hours}h ${timer.minutes}m ${timer.seconds}s`
+    }
+    
+    let intervalId;
+    let isTimerRunning = false;
+
+     function startstopTimer () {
+      if (!isTimerRunning) {
+        intervalId =  setInterval(() => {
+          if (timer.seconds >= 59) {
+            timer.seconds = 0
+            timer.minutes++
+            updateTimer();
+            if (timer.minutes >= 59) {
+              timer.minutes = 0
+              timer.hours++
+              updateTimer();
+            }
+          }
+          else {
+            timer.seconds++
+            updateTimer();
+          }
+        }, 1000)
+        isTimerRunning = true;
+        document.querySelector('.js-start-button')
+          .innerHTML = 'Stop Timer'
+      }
+      else {
+        clearInterval(intervalId)
+        updateTimer();
+        isTimerRunning = false;
+        document.querySelector('.js-start-button')
+          .innerHTML = 'Start Timer'
+      }
+     }
+
+     function resetTimer() {
+      timer  = {
+        seconds: 0,
+        minutes: 0,
+        hours: 0,
+        }
+      document.querySelector('.timer-show')
+        .innerHTML = `${timer.hours}h ${timer.minutes}m ${timer.seconds}s`
+     }
+  </script>
+</body>
+</html>
