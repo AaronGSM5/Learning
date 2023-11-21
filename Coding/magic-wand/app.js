@@ -8,7 +8,7 @@ wrapper.addEventListener("mousemove", (e) => {
     const x = (e.pageX - e.currentTarget.offsetLeft) / e.currentTarget.offsetWidth * 100
     const y = (e.pageY - e.currentTarget.offsetTop) / e.currentTarget.offsetHeight * 100
   
-    var wandX = (x * -0.15) + x * 1.15
+    var wandX = (e.currentTarget.offsetWidth * -0.01) + x * 1.3
     var wandY = (y * -0.5) + y * 1.15
   
   
