@@ -57,6 +57,8 @@ body, html {
 }
 
 .wand {
+  left: -50%;
+  top: 50%;
   width: 50px;
   aspect-ratio: 1/20;
   background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(60,60,60,1) 50%, rgba(10,10,10,1) 100%);

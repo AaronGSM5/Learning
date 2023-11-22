@@ -8,8 +8,9 @@ wrapper.addEventListener("mousemove", (e) => {
     const x = (e.pageX - e.currentTarget.offsetLeft) / e.currentTarget.offsetWidth * 100
     const y = (e.pageY - e.currentTarget.offsetTop) / e.currentTarget.offsetHeight * 100
   
-    var wandX = (e.currentTarget.offsetWidth * -0.01) + x * 1.3
+    var wandX = (100 * -0.2) + x * 1.2
     var wandY = (y * -0.5) + y * 1.15
+    console.log(wandY)
   
   
     wand.animate({
@@ -17,12 +18,16 @@ wrapper.addEventListener("mousemove", (e) => {
       top: `${wandY}%`,
       rotate: `${-5+ (10 * x / 100)}deg`
     }, {duration: 400, fill:"forwards"})
+
+    blur.animate({
+      backdropFilter: `blur(${(100 - x) / 5 }px)`
+    }, {duration: 400, fill:"forwards"})
   
   
     //set left and top of div based on mouse position
   
   
-      blur.style.backdropFilter = `blur(${(x * 2/10-4)}px)`
+      blur.style.backdropFilter = `blur(${(100 - x) / 20 }px)`
 
       //CHange blur
       //Edit position of wand
