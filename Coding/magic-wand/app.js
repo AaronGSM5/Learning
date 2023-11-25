@@ -17,11 +17,12 @@ wrapper.addEventListener("mousemove", (e) => {
       top: `${wandY}%`,
       rotate: `${-5+ (10 * x / 100)}deg`
     }, {duration: 400, fill:"forwards"})
-
-    const numbers  = [1,2,3,4,5]
+    
+    // TODO make if statements for singular hovers
+    const numbers  = [1,2,3,4]
 
     numbers.forEach( (element) => {
-      document.querySelector(`.blur${element}`).style.backdropFilter = `blur(${(100 - x) / 10}px)`
+      document.querySelector(`.blur${element}`).style.backdropFilter = `blur(${(100 - x) / 6}px)`
       document.querySelector(`.blur${element}`).style.opacity = `${1-(x/100)}`
     })
 
