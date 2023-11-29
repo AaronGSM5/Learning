@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: 'Comic Neue';
 }
 
 body, html {
@@ -67,11 +67,10 @@ main section {
   font-size: 200%;
   color: transparent;
   -webkit-text-stroke-color: #fff;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   font-weight: 700;
   text-align: center;
   font-size: 50px;
-  transition: 2s;
 }
 
 #card3 {
@@ -92,9 +91,5 @@ section:hover #card3 {
   left: 75%;
   rotate: 10deg;
   top: 55%;
-}
-
-section:hover #card2 p {
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
