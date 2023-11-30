@@ -6,43 +6,129 @@
   font-family: 'Comic Neue';
 }
 
+:root {
+  --text: #000000;
+  --primary: #fee7d2;
+  --accent: #fedcbe;
+}
+
 body, html {
   width: 100%;
   height: 100%;
 }
 
 main {
-  background-color: #010101;
+  background-color: #161616;
   width: 100%;
   height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 600px;
+}
+
+.buttons {
+  height: 100px;
+  gap: 30px;
+  padding: 0 200px;
+  position: relative;
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buttons button {
+  width: 70%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  cursor: pointer;
+
+  border: 2px #fff solid;
+  background-color: transparent;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, width 0.1s ease-in-out, border-color 0.3s;
+}
+
+.buttons button img {
+  width: 50%;
+}
+
+.buttons button:active {
+  width: 65%;
+}
+
+.buttons button:nth-child(1):active {
+  border-color: red;
+}
+
+.buttons button:nth-child(2):active {
+  border-color: rgb(0, 174, 255);
+}
+
+.buttons button:nth-child(1):hover {
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+}
+
+.buttons button:nth-child(2):hover {
+  box-shadow: 0 0 30px rgba(0, 174, 255, 0.4);
+}
+
+.slider {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.slides {
+  width: 600px;
+  aspect-ratio: 16 / 9;
+  position: absolute;
+  transition: transform 500ms, rotate 500ms;
+}
+
+.slides[data-status="active"] {
+  transition-delay: 300ms;
+}
+
+.slides[data-status="unknown"] {
+  transform: scale(0);
+}
+
+.slides[data-status="after"] {
+  transform: translateX(50%) scale(0) rotate(45deg);
 
 }
 
-main section {
-  width: 600px;
-  aspect-ratio: 16 / 9;
-
-  position: relative;
+.slides[data-status="before"] {
+  transform: translateX(-50%) scale(0) rotate(-45deg);
 }
 
 .card {
-  width: 30%;
+  width: 25%;
   aspect-ratio: 5 / 7;
-  box-shadow: 0 0 2px white;
+  box-shadow: 0 0 20px black;
   border-radius: 10%;
 
   position: absolute;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease;
   overflow: hidden;
 }
 
-.card img {
+.card img, .small-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -55,7 +141,7 @@ main section {
 
 #card2 {
   left: 50%;
-  background-color: wheat;
+  background-color: var(--primary);
 
   display: flex;
   align-items: center;
@@ -64,9 +150,9 @@ main section {
 }
 
 #card2 p {
-  font-size: 200%;
-  color: transparent;
-  -webkit-text-stroke-color: #fff;
+  font-size: 50px;
+  color: var(--text);
+  -webkit-text-stroke-color: var(--text);
   -webkit-text-stroke-width: 2px;
   font-weight: 700;
   text-align: center;
@@ -78,17 +164,55 @@ main section {
   rotate: 5deg;
 }
 
-section:hover #card1 {
-  left: 25%;
+.small-card {
+  width: 10%;
+  aspect-ratio: 5/7;
+  background: var(--accent);
+  border-radius: 10%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transition: 0.4s ease-out;
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+}
+
+.slides:hover #smallCard1 {
+  top: 20%;
+  left: 35%;
+  rotate: -15deg;
+}
+
+.slides:hover #smallCard2 {
+  top: 25%;
+  left: 85%;
   rotate: -10deg;
 }
 
-section:hover #card2 {
-  top: 48%;
+.slides:hover #smallCard3 {
+  top: 80%;
+  left: 20%;
+  rotate: -25deg;
 }
 
-section:hover #card3 {
-  left: 75%;
+.slides:hover #smallCard4 {
+  top: 87%;
+  left: 80%;
+  rotate: 30deg;
+}
+
+.slides:hover #card1 {
+  left: 30%;
+  rotate: -10deg;
+}
+
+.slides:hover #card2 {
+  top: 45%;
+}
+
+.slides:hover #card3 {
+  left: 70%;
   rotate: 10deg;
   top: 55%;
 }
