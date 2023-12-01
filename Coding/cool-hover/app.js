@@ -20,7 +20,7 @@ function likeOrDislike(whichOne) {
     setTimeout(() => {
       currentSlide.dataset.status = "unknown";
       enableButtons = true;
-    }, 800);
+    }, 850);
   
     activeIndex = nextIndex;
   }
