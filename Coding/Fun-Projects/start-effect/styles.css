@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(239, 235, 255);
+}
+
+body {
+  height: 300vh;
+  background: rgb(12,0,66);
+  background: linear-gradient(180deg, rgba(12,0,66,1) 0%, rgba(12,0,66,1) 34%, rgb(11, 0, 61) 33.3%, rgb(7, 0, 36) 100%);
+}
+
+#name-effect {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  border-bottom: 1px white solid;
+  overflow: hidden;
+}
+
+.dark-squares, .light-squares, .pictures, .name, .name-fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-squares {z-index: 100;}
+.name-fill {z-index: 101;}
+.light-squares {z-index: 102;}
+.pictures {z-index: 103;}
+.name {z-index: 104;}
+
+.name, .name-fill {
+  display: grid;
+  place-items: center;
+}
+
+.name h1, .name-fill h1 {
+  font-size: 7vw;
+  text-align: center;
+  letter-spacing: 1rem;
+  -webkit-text-stroke: rgb(239, 235, 255) 1px;
+  font-weight: bold;
+}
+
+.name h1 {
+  color: transparent;
+}
+
+.item-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dark-square, .light-square {
+  width: 35%;
+  max-width: 300px;
+  max-height: 500px;
+  aspect-ratio: 5/7;
+  position: absolute;
+  left: -35%;
+  animation-name: goLeft;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.dark-square {background-color: rgb(12, 0, 63);}
+.light-square {background-color: rgb(16, 0, 85);}
+
+@keyframes goLeft {
+  to {left: 100%;}
+}
+
+#dark-square1 {
+  top: 10%;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  aspect-ratio: 6/10;
+}
+
+#dark-square2 {
+  top: 30%;
+  animation-delay: 7s;
+  animation-duration: 8s;
+  aspect-ratio: 6/7;
+}
+
+#dark-square3 {
+  top: 50%;
+  animation-delay: 4s;
+  animation-duration: 9s;
+  aspect-ratio: 7/6;
+}
+
+#dark-square4 {
+  top: 70%;
+  animation-delay: 7s;
+  animation-duration: 6s;
+  aspect-ratio: 5/9;
+}
+
+#dark-square5 {
+  top: 90%;
+  animation-delay: 2s;
+  animation-duration: 7s;
+  aspect-ratio: 9/5;
+}
+
+#light-square1 {
+  top: 10%;
+  animation-delay: 4s;
+  animation-duration: 10s;
+  aspect-ratio: 6/5;
+}
+
+#light-square2 {
+  top: 30%;
+  animation-delay: 3s;
+  animation-duration: 8s;
+  aspect-ratio: 10/5;
+}
+
+#light-square3 {
+  top: 50%;
+  animation-delay: 6s;
+  animation-duration: 7s;
+  aspect-ratio: 16/11;
+}
+
+#light-square4 {
+  top: 70%;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  aspect-ratio: 9/3;
+}
+
+#light-square5 {
+  top: 40%;
+  animation-delay: 4s;
+  animation-duration: 5s;
+  aspect-ratio: 9/4;
+}
+
+
+

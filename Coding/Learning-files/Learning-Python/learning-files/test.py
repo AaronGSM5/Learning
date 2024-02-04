@@ -1,4 +1,4 @@
-temperature = 301
+temperature = 21
 
 if temperature > 30: 
   print('hot')

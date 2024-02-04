@@ -1,0 +1,171 @@
+:root {
+  --text: rgb(224, 220, 241);
+  --background: rgb(9, 7, 17);
+  --primary: rgb(164, 151, 218);
+  --secondary: rgb(55, 39, 118);
+  --accent: rgb(88, 61, 195);
+}
+
+main {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+main h1 {
+  position: relative;
+  height: 5vh;
+  font-size: 4vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+  "box1 box2"
+  "box3 box4";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  place-items: center;
+
+  position: relative;
+  background-color: rgba(255,255,255, 0.02);
+  border-radius: 5vb;
+  height: 60vh;
+  width: 90vw;
+}
+
+.about-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+#box1 {
+  grid-area: box1;
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+}
+
+#box4 {
+  grid-area: box4;
+}
+
+.slides {
+  width: 80%;
+  height: 80%;
+  transition: transform 500ms, rotate 500ms;
+  position: relative;
+}
+
+.card {
+  width: 30%;
+  aspect-ratio: 5 / 7;
+  box-shadow: 0 0 20px black;
+  border-radius: 10%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.card img, .small-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#card1 {
+  left: 45%;
+  rotate: -5deg;
+}
+
+#card2 {
+  left: 50%;
+  background-color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+#card2 p {
+  color: var(--text);
+  font-weight: 700;
+  text-align: center;
+  font-size: 2vw;
+}
+
+#card3 {
+  left: 55%;
+  rotate: 5deg;
+}
+
+.small-card {
+  width: 10%;
+  aspect-ratio: 5/7;
+  background: var(--accent);
+  border-radius: 10%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transition: 0.4s ease-out;
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+}
+
+.slides:hover #smallCard1 {
+  top: 20%;
+  left: 35%;
+  rotate: -15deg;
+}
+
+.slides:hover #smallCard2 {
+  top: 25%;
+  left: 85%;
+  rotate: -10deg;
+}
+
+.slides:hover #smallCard3 {
+  top: 80%;
+  left: 20%;
+  rotate: -25deg;
+}
+
+.slides:hover #smallCard4 {
+  top: 87%;
+  left: 80%;
+  rotate: 30deg;
+}
+
+.slides:hover #card1 {
+  left: 30%;
+  rotate: -10deg;
+}
+
+.slides:hover #card2 {
+  top: 45%;
+}
+
+.slides:hover #card3 {
+  left: 70%;
+  rotate: 10deg;
+  top: 55%;
+}
+

@@ -6,8 +6,8 @@ let index = 0
 container.addEventListener('mousemove', (e) =>  {
   if (allowEffect) {
     allowEffect = false
-    let mouseX = (e.pageX / window.innerWidth) * 100
-    let mouseY = (e.pageY / window.innerHeight) * 100
+    let mouseX = (e.pageX) / e.currentTarget.offsetWidth * 100
+    let mouseY = (e.pageY) / e.currentTarget.offsetHeight * 100
 
     const randomNumber = 3 - (Math.random() * 6)
     const randomRotation = 45 - (Math.random() * 90)
