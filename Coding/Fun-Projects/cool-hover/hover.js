@@ -39,4 +39,4 @@ function randomDirection() {
 
   // document.querySelector('[data-status="after"]').style.rotate = random;
 
-}
+} 
