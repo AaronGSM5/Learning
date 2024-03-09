@@ -1,0 +1,11 @@
+.zitat {
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.zitat-author {
+  color: gray;
+  font-size: 20px;
+  font-style: normal;
+}

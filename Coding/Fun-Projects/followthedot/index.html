@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> 
+  <title>Follow the Dot!</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="difficulties">
+        <button onclick="chooseDifficulty('very easy')" style="opacity: 1;">Very Easy</button>
+        <button onclick="chooseDifficulty('easy')">Easy</button>
+        <button onclick="chooseDifficulty('medium')">Medium</button>
+        <button onclick="chooseDifficulty('hard')">Hard</button>
+        <button onclick="chooseDifficulty('very hard')">Very Hard</button>
+        <button onclick="chooseDifficulty('deadly')">Deadly</button>
+        <button onclick="chooseDifficulty('impossible')">Impossible</button>
+      </div>
+    </div>
+    <div class="game">
+      <div id="dot" onclick="moveToRandomPosition();"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

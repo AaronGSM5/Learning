@@ -1,0 +1,75 @@
+main {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  right: 50px;
+  margin: 50px 100px;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  text-align: center;
+  column-gap: 25px;
+  row-gap: 20px;
+}
+
+@media (max-width : 1350px) {
+  .work-grid {
+    grid-template-columns: 400px 400px;
+  }
+}
+
+@media (min-width :1351px) and (max-width: 1799px) {
+  .work-grid {
+    grid-template-columns: 400px 400px 400px;
+  }
+} 
+
+@media (min-width: 1800px) {
+  .work-grid {
+    grid-template-columns: 400px 400px 400px 400px;
+  }
+}
+
+.todo-list-container, 
+.tictactoe-container, 
+.calculator-container,
+.cookie-clicker-container {
+  position: relative;
+}
+
+.try-it {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+
+  background-color: rgba(211, 211, 211, 0.3);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 2px rgb(83, 83, 83);
+
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+.tictactoe-container:hover .try-it,
+.calculator-container:hover .try-it,
+.cookie-clicker-container:hover .try-it,
+.todo-list-container:hover .try-it {
+  opacity: 1;
+}
+
+.showcase-img {
+  width: 400px;
+  height: 400px;
+}
