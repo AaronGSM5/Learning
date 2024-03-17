@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+
+  position: relative;
+  z-index: 101;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 100;
+  position: absolute;
+}
+
+.effect {
+  width: 40px;
+  aspect-ratio: 1/1;
+
+  z-index: 102;
+
+  position: absolute;
+  transition: 400ms;
+}
+
+.effect img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

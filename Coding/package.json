@@ -1,6 +1,11 @@
 {
   "dependencies": {
     "countdownjs": "^2.0.0",
+<<<<<<< HEAD
+=======
+    "dayjs": "^1.11.10",
+    "git": "^0.1.5",
+>>>>>>> f174eea3acfc049014aa49c7919d9c8e45d5f29d
     "simplycountdown.js": "^1.7.0"
   }
 }

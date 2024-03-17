@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      .Button{
+        background-color: black;
+        border-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+
+    <button class="Button"
+    onclick="
+
+const getRandom = Math.random();
+
+    if(getRandom < 0.33) {
+      alert('You win! The Computer picked Scissors')
+    }
+
+    else if (getRandom < 0.66) {
+       alert('You Lose... The Computer picked Paper')
+    }
+    else {
+      alert('Tie! The Computer also picked Rock')
+    }
+    console.log(getRandom)
+    ">
+      Rock
+    </button>
+
+    
+    <button class="Button"
+    onclick="
+
+const getRandom = Math.random();
+
+    if(getRandom < 0.33) {
+      alert('You win! The Computer picked Rock')
+    }
+
+    else if (getRandom < 0.66) {
+       alert('You Lose... The Computer picked Scissors')
+    }
+    else {
+      alert('Tie! The Computer also picked Paper')
+    }
+    console.log(getRandom)
+    ">
+      Paper
+    </button>
+
+    <button class="Button"
+    onclick="
+
+const getRandom = Math.random();
+
+    if(getRandom < 0.33) {
+      alert('You win! The Computer picked Paper')
+    }
+
+    else if (getRandom < 0.66) {
+       alert('You Lose... The Computer picked Rock')
+    }
+    else {
+      alert('Tie! The Computer also picked Scissors')
+    }
+    console.log(getRandom)
+    ">
+      Scissors
+    </button>
+    <script>
+      
+    </script>
+  </body>
+</html>
