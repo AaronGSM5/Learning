@@ -38,7 +38,6 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   gap: 10px;
 
-  backdrop-filter: blur(20px);
   padding: 30px;
   border-radius: 15px;
 }

@@ -1,19 +1,23 @@
 
-let intro = document.querySelector('.intro')
+const intro = document.querySelector('.intro')
 
-let page = document.querySelector('.page')
-let title = document.querySelector('.header-title')
+const page = document.querySelector('.page')
+const title = document.querySelector('.header-title')
 
-let navLinks = document.querySelector('.nav-links-container')
-let about = document.querySelector('.about')
-let work = document.querySelector('.work')
-let contact = document.querySelector('.contact')
+const content = document.querySelector('.content')
+const hallo = document.getElementById("hallo")
+const text = document.getElementById("text")
+
+const navLinks = document.querySelector('.nav-links-container')
+const about = document.querySelector('.about')
+const work = document.querySelector('.work')
+const contact = document.querySelector('.contact')
 
 
-let rBorder = document.querySelector('.right-right-border')
-let bBorder = document.querySelector('.right-bottom-border')
-let lBorder = document.querySelector('.left-left-border')
-let tBorder = document.querySelector('.left-top-border')
+const rBorder = document.querySelector('.right-right-border')
+const bBorder = document.querySelector('.right-bottom-border')
+const lBorder = document.querySelector('.left-left-border')
+const tBorder = document.querySelector('.left-top-border')
 
 window.addEventListener('DOMContentLoaded', () =>{
 
@@ -55,8 +59,11 @@ setTimeout(() => {
     setTimeout(() => {
       about.style.opacity = '1'
       work.style.opacity = '1'
-      contact.style.opacity = '1'
-    }, 500);
 
+      setTimeout(() => {
+        content.style.opacity = '1'
+      }, 1000);
+    }, 500);
   }, 500);
-}, 2200)})
+}, 2200);
+})

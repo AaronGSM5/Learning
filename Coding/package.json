@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "countdownjs": "^2.0.0",
+    "simplycountdown.js": "^1.7.0"
+  }
+}
