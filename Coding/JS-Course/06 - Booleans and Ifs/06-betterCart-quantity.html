@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SHOP</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+
+    <button onclick=" 
+    console.log('Cart Quantity: ' + Cart)">
+    Show Quantity
+    </button>
+
+
+    <button onclick ="
+     if (Cart + 1 > 10) {
+        alert('The cart is full');
+      } else {
+        Cart += 1;
+        console.log(`Cart quantity: ${Cart}`);
+      }
+    ">
+      Add to Cart
+    </button>
+
+    <button onclick ="
+    if (Cart + 2 > 10) {
+        alert('The cart is full');
+      } else {
+        Cart += 2;
+        console.log(`Cart quantity: ${Cart}`);
+      }
+    ">
+      +2
+    </button>
+
+    <button onclick ="
+    if (Cart + 3 > 10) {
+        alert('The cart is full');
+      } else {
+        Cart += 3;
+        console.log(`Cart quantity: ${Cart}`);
+      }
+    ">
+      +3
+    </button>
+
+    <button onclick ="
+    if (Cart + 4 > 10) {
+        alert('The cart is full');
+      } else {
+        Cart += 4;
+        console.log(`Cart quantity: ${Cart}`);
+      }
+    ">
+      +4
+    </button>
+
+    <button onclick ="
+  if (Cart + 5 > 10) {
+        alert('The cart is full');
+      } else {
+        Cart += 5;
+        console.log(`Cart quantity: ${Cart}`);
+      }
+    ">
+      +5
+    </button>
+
+    <button onclick ="
+    if (Cart - 1 < 0) {
+      alert('Not enough items in the cart')
+    }
+    else {
+    Cart -= 1;
+    console.log('Cart Quantity: ' + Cart)
+    }
+    ">
+      -1
+    </button>
+
+    <button onclick ="
+    if (Cart - 2 < 0) {
+      alert('Not enough items in the cart')
+    }
+    else {
+    Cart -= 2;
+    console.log('Cart Quantity: ' + Cart)
+    }
+    ">
+      -2
+    </button>
+
+    <button onclick ="
+    if (Cart - 3 < 0) {
+      alert('Not enough items in the cart')
+    }
+    else {
+    Cart -= 3;
+    console.log('Cart Quantity: ' + Cart)
+    }
+    ">
+      -3
+    </button>
+
+    <button onclick ="Cart = 0;
+    console.log('Cart was reset.')">
+      Reset Cart
+    </button>
+
+  </body>
+  <script>
+    alert('Welcome to the Shop!')
+    let Cart = 0;
+  </script>
+</html>

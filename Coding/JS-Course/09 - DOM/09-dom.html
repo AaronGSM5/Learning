@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+
+    <button>hello</button>
+    
+    <button class="js-button" >Second button</button>
+    <script>
+      /*
+      console.log(document.title)
+      document.title = 'Changed!';
+
+      console.log(document.body);
+      console.log(typeof document.body);
+
+      console.log(document.body.innerHTML);
+      document.body.innerHTML = '<button>Hello!</button>'
+      */
+
+      /*
+      document.body.innerHTML = 'hello';
+      document.title = 'Good Job!'
+      */
+     
+//Changing a button
+      console.log(document.querySelector('button').innerHTML);
+      document.querySelector('button')
+        .innerHTML = 'Changed!'
+//Chaning a Specific Button
+      document.querySelector('.js-button')
+        .innerHTML = 'Changed.';
+
+      const buttonElement = document.querySelector('.js-button')
+      console.log(buttonElement)
+
+//Dont do Math using Strings
+      String(25)
+      console.log('25' - 5);
+      console.log('25' + 5);
+
+//Window Object gets added automatilly
+      window.document
+      window.console.log('window')
+      window.alert
+
+
+
+      </script>
+  </body>
+</html>

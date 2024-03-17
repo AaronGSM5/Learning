@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Konrad soll mal endlich die Schuhe angucken!!!</title>
+</head>
+<body>
+
+  <div  class="Container">
+    <p class="timer-show">0</p>
+  </div>
+
+
+
+  <script>
+
+    let ICEcountdown =  {
+      seconds: 0,
+      minutes: 0,
+      hours: 2
+    }
+
+
+    function	BananenEssenImICEMachtSpaßFürDieGanzeFamilieUndAuchFürKonrad() {
+      setInterval( () => {
+        if (seconds === 0) {
+          ICEcountdown.seconds = 59
+          if (timer.minutes === 0) {timer.minutes = 59}
+          else {timer.minutes--}
+        }
+        else if (minutes === 0) {
+          ICEcountdown.minutes = 59
+        }
+
+        document.querySelector('.timer-show')
+            .innerHTML = `${hours}h ${minutes}m ${seconds}`
+      })
+    }
+  </script>
+</body>
+</html>
+
+<!--Mehrschusswaffen werden benötigt für Konrard! und seinen Freund. Der mag aber keine bANANEN-->

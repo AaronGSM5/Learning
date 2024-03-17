@@ -1,0 +1,21 @@
+p {
+  margin : 0;
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.online {
+  font-family: Montserrat;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Delivery {
+  text-decoration: underline;
+}
