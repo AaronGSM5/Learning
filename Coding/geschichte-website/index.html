@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>3. Mai 1791</title>
+</head>
+<body>
+  <header>
+    <img src="https://meinwarschau.com/wp-content/uploads/2020/03/polen-flagge.jpg">
+  </header>
+  <nav>
+    <button onclick="changeSlides(0)" class="link" data-id="0">Der 3. Mai <br> 1971</button>
+    <button onclick="changeSlides(1)" class="link" data-id="1">Historischer <br> Hintergrund</button>
+    <button onclick="changeSlides(2)" class="link" data-id="2">Aspekte der <br> Verfassung</button>
+    <button onclick="changeSlides(3)" class="link" data-id="3">Reaktion der <br> Menschen</button>
+    <button onclick="changeSlides(4)" class="link" data-id="4">Relevanz bis <br> heute</button>
+    <button onclick="changeSlides(5)" class="link" data-id="5">So wird <br> gefeiert</button>
+  </nav>
+  <main id="slider">
+    <section id="content-slider">
+      <div id="slides-container">
+        <div class="slides" data-status="active"  data-index="0">
+          <h1>Der 3. Mai 1791</h1>
+          <ul>
+            <li>
+              Am 3. Mai 1791 wurde die erste Polnische Verfassung verabschiedet.
+            </li>
+            <li>
+              Diese Verfassung war ebenfalls die erste in ganz Europa.
+            </li>
+            <li>
+              <a class="more-info" href="#Der3Mai" onclick="lightTitle('Der3Mai')">Mehr Informationen</a>
+            </li>
+          </ul>
+        </div>
+        <div class="slides" data-status="unknown" data-index="1">
+          <h1>Historischer Hintergrund</h1>
+          <ul>
+            <li>
+              Vor der Verfassung befand sich Polen in einer instabilen Lage.
+            </li>
+            <li>
+              Es gab viele soziale Ungerechtigkeiten und Politische Probleme.
+            </li>
+            <li>
+              Durch diese Probleme, kombiniert mit den Ideen der Aufklärung enstand die Verfassung, die als Versuch angesehen wurde, Polens politische Struktur zu modernisieren und zu stärken.
+            </li>
+            <li>
+              <a class="more-info" href="#historischer-hintergrund" onclick="lightTitle('historischer-hintergrund')">Mehr Informationen</a>
+            </li>
+          </ul>
+        </div>
+        <div class="slides" data-status="unknown" data-index="2">
+          <h1>Aspekte der Verfassung</h1>
+          <ul>
+            <li>
+              Die Verfassung verkörpert die Werte der Aufklärung, Vernunft, Recht und Freiheit.
+            </li>
+            <li>
+              Die Verfassung griff Montesquiues Idee der Gewaltenteilung auf, also die Teilung des Staats in Legislative, Exekutive und Judikative.
+            </li>
+            <li>
+              Die Volkssouverinität von Rousseau ist ebenfalls in der Verfassung vertreten.
+            </li>
+            <li>
+              <a class="more-info" href="#aspekte-der-verfassung" onclick="lightTitle('aspekte-der-verfassung')">Mehr Informationen</a>
+            </li>
+          </ul>
+        </div>
+        <div class="slides" data-status="unknown" data-index="3">
+          <h1>Reaktion der Menschen</h1>
+          <ul>
+            <li>
+              Das polnische Volk war gespaltener Meinung.
+            </li>
+            <li>
+              Viele fanden es gut da sie an ein modernes vereintes Polen glaubten.
+            </li>
+            <li>
+              Einige Adlige und koservative Bürger hatten jedoch Angst ihre Privilege zu verlieren, und haben sogar versucht die Verfassung zu sabotieren.
+            </li>
+            <li>
+              <a class="more-info" href="#reaktion-der-menschen" onclick="lightTitle('reaktion-der-menschen')">Mehr Informationen</a>
+            </li>
+          </ul>
+        </div>
+        <div class="slides" data-status="unknown" data-index="4">
+          <h1>Relevanz bis heute</h1>
+          <ul>
+            <li>
+              Bis heute sind die Werte der Verfassung 1791 in Polen vertreten. 
+            </li>
+            <li>
+              Die Menschen feiern diese Verfassung bis heute Jährlich am 3. Mai.
+            </li>
+            <li>
+              <a class="more-info" href="#relevanz-bis-heute" onclick="lightTitle('relevanz-bis-heute')">Mehr Informationen</a>
+            </li>
+          </ul>
+        </div>
+        <div class="slides" data-status="unknown" data-index="5">
+          <h1>So wird gefeiert</h1>
+          <ul>
+            <li>
+              Die Menschen feiern den 3. Mai, weil sie die Verfassung als Meilenstein in der polnischen Geschichte sehen.
+            </li>
+            <li>
+              Sie feiern ihn mit Paraden, Festversammlungen und Umzügen.
+            </li>
+            <li>
+              <a class="more-info" href="#so-wird-gefeiert" onclick="lightTitle('so-wird-gefeiert')">Mehr Informationen</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div id="main-img-container">
+      <img id="main-img" src="https://www.tripsavvy.com/thmb/QoOSSwwkRoLOExqJFFx4T_SIWWU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/poland--warsaw--view-to-castle-square-with-sigismunds-column-and-lighted-christmas-tree-by-night-585854947-59da97d8845b340012bb5b02.jpg">
+      <div class="blur"></div>
+    </div>
+    <footer>
+      <small>Aaron Gaßmann & Pasqual Breker</small>
+      <small>Quellen- & Bilderangaben</small>
+    </footer>
+  </main>
+  <main id="content">
+    <!-- Der 3. Mai 1791 -->
+    <h1 id="Der3Mai">Der 3. Mai 1791</h1>
+    <p id="Der3Mai-text">
+      Am 3. Mai 1791 wurde ein bedeutendes Kapitel in der Geschichte Polens geschrieben - es war der Tag, an dem die erste polnische Verfassung verabschiedet wurde. 
+      <br> <br>
+      Diese wegweisende Ereignis markierte einen Wendepunkt in der politischen Landschaft Polens und hatte weitreichende Auswirkungen auf die Entwicklung des Landes und darüber hinaus. Die Annahme dieser Verfassung symbolisierte den Wunsch der polnischen Nation nach politischer Souveränität, Freiheit und dem Streben nach moderner Regierungsführung.
+      <br> <br>
+      Der 3. Mai 1791 steht somit als ein Meilenstein des polnischen Nationalbewusstseins und als ein inspirierendes Beispiel für den Einsatz für demokratische Prinzipien und individuelle Rechte inmitten einer Zeit des Umbruchs und der Unsicherheit in Europa.
+    </p>
+    <!-- Historischer Hintergrund -->
+    <h1 id="historischer-hintergrund">Der Historische Hintergrund</h1>
+    <p id="historischer-hintergrund-text">
+      Am 3. Mai 1791 war Polen ein Land im Wandel und stand vor zahlreichen Herausforderungen. 
+      <br><br>
+      Die polnische Adelsrepublik, die als eine der ältesten Formen der demokratischen Regierung in Europa galt, war durch innere Konflikte und äußere Bedrohungen geschwächt.
+      <br><br>
+      Die politische Instabilität und die zunehmende Einmischung von Nachbarländern wie Preußen, Russland und Österreich-Ungarn hatten das Land in eine kritische Lage gebracht. Die Adelsklasse, bekannt als die Szlachta, fand sich in einem Machtkampf zwischen reformorientierten Kräften und solchen, die den Status quo verteidigten, wieder. Die reformorientierten Kräfte drängten auf eine Modernisierung der Regierung und die Stärkung der Zentralgewalt, um die Souveränität Polens zu schützen und die langfristige Stabilität des Landes zu gewährleisten. 
+      <br><br>
+      Es war in diesem Kontext des politischen Umbruchs und der wachsenden Unruhe, dass die Verabschiedung der ersten polnischen Verfassung am 3. Mai 1791 stattfand. Diese historische Verfassung wurde als ein mutiger Schritt hin zu einer modernen Regierung und einer Stärkung der nationalen Identität angesehen, und sie legte den Grundstein für eine neue Ära in der polnischen Geschichte.
+    </p>
+    <h1 id="aspekte-der-verfassung">Die Aspekte der Verfassung</h1>
+    <p id="aspekte-der-verfassung-text">
+      Die Verfassung vom 3. Mai 1791 spiegelte die Werte der Aufklärung wider und setzte wichtige Prinzipien fest, die für die polnische Gesellschaft und Regierung von grundlegender Bedeutung waren. Zu den herausragenden Werten dieser Verfassung gehörten:
+      <br><br>
+      Stärkung der Zentralgewalt: Die Verfassung zielte darauf ab, die Autorität des zentralen Regierungssystems zu stärken, um die Fragmentierung und Schwäche der polnischen Adelsrepublik zu überwinden. Sie etablierte eine stärkere Exekutive und schuf einen Rahmen für eine effektivere Regierungsführung.
+      <br><br>
+      Gewaltenteilung: Die Verfassung legte die Grundlagen für eine Gewaltenteilung zwischen Legislative, Exekutive und Judikative fest. Dies sollte die Macht des Adels begrenzen und eine ausgewogenere Regierungsführung gewährleisten.
+      <br><br>
+      Schutz individueller Rechte: Die Verfassung garantierte grundlegende Bürgerrechte und Freiheiten, wie zum Beispiel die Gleichheit vor dem Gesetz, Religionsfreiheit und den Schutz des Privateigentums. Dies war ein bedeutender Schritt hin zu einer gerechteren und freieren Gesellschaft.
+      <br><br>
+      Nationale Souveränität: Die Verfassung betonte die Souveränität Polens als Nation und legte die Grundlagen für eine stärkere nationale Identität. Sie setzte sich gegen die Einmischung fremder Mächte ein und stärkte das Bewusstsein für die Unabhängigkeit Polens.
+      <br><br>
+      Modernisierung und Reform: Die Verfassung hatte auch das Ziel, das politische System zu modernisieren und die Gesellschaft zu reformieren. Dies umfasste unter anderem Bildungsreformen, die Förderung wissenschaftlicher und kultureller Entwicklung sowie Maßnahmen zur Stabilisierung der Wirtschaft.
+    </p>
+    <h1 id="reaktion-der-menschen">Die Meinung der Allgemeinheit zur Verfassung</h1>
+    <p id="reaktion-der-menschen-text">
+      Die Reaktionen der Bevölkerung auf die Verfassung vom 3. Mai 1791 waren gespalten.
+      <br><br>
+      Liberale wie Intellektuelle und bürgerliche Menschen begrüßten sie als Weg zur Modernisierung und Stabilisierung Polens. Konservative Adlige und Vertreter der orthodoxen Kirche lehnten sie jedoch ab, aus Sorge um den Verlust traditioneller Machtstrukturen. Diese Spaltung spiegelte die politische Vielfalt und die konkurrierenden Interessen in Polen wider. 
+      <br><br>
+      Trotz der Uneinigkeit markierte die Verfassung einen wichtigen Schritt in Richtung nationaler Souveränität und individueller Rechte.
+    </p>
+    <h1 id="relevanz-bis-heute">Die Relevanz der Fassung bis heute</h1>
+    <p id="relevanz-bis-heute-text">
+      Die Verfassung vom 3. Mai 1791 hat eine tiefgreifende historische Bedeutung für Polen und dient als Symbol für den Kampf um Freiheit, Souveränität und demokratische Prinzipien. Obwohl sie nicht mehr formell in Kraft ist, bleibt ihr Erbe und ihre Bedeutung für das polnische Selbstverständnis und die nationale Identität stark.
+      <br><br>
+      Heutzutage wird die Verfassung oft als Inspirationsquelle für moderne Verfassungsgrundsätze betrachtet, insbesondere in Bezug auf die Garantie individueller Rechte und Freiheiten sowie die Idee der Gewaltenteilung. Ihre Werte und Prinzipien haben die Entwicklung moderner demokratischer Institutionen und Gesetze in Polen beeinflusst.
+      <br><br>
+      Darüber hinaus wird die Verfassung vom 3. Mai 1791 oft als ein Symbol für den Widerstand gegen Fremdherrschaft und die Verteidigung nationaler Souveränität betrachtet. In einer Zeit, in der die Unabhängigkeit Polens erneut auf dem Spiel steht, wird ihr Geist oft als Quelle der Inspiration für die polnische Gesellschaft und Politik genutzt.
+      <br><br>
+      In diesem Sinne bleibt die Verfassung vom 3. Mai 1791 auch heute noch relevant, nicht nur als historisches Dokument, sondern auch als Leitfaden für die Gestaltung der Zukunft Polens auf der Grundlage von Freiheit, Gerechtigkeit und demokratischen Werten.
+    </p>
+    <h1 id="so-wird-gefeiert">So feiern die Menschen den 3. Mai</h1>
+    <p id="so-wird-gefeiert-text">
+      In vielen Städten finden offizielle Veranstaltungen statt, an denen Regierungsbeamte, Politiker und Vertreter der Zivilgesellschaft teilnehmen. Dies kann Zeremonien umfassen, bei denen die Verfassung vom 3. Mai 1791 gewürdigt wird, sowie Reden, Kranzniederlegungen an Denkmälern und andere offizielle Aktivitäten.
+      <br><br>
+      In einigen Städten werden Paraden organisiert, bei denen Menschen traditionelle polnische Kleidung tragen und Fahnen schwenken. Es gibt auch kulturelle Veranstaltungen wie Konzerte, Theateraufführungen und Ausstellungen, die die Geschichte und Bedeutung der Verfassung vom 3. Mai feiern.
+      <br><br>
+      Da der 3. Mai auch der Tag des Gedenkens an die Verkündigung ist, nehmen viele Menschen an religiösen Feiern und Gottesdiensten teil, um für das Land und seine Zukunft zu beten.
+      <br><br>
+      Schulen, Universitäten und Bildungseinrichtungen können spezielle Programme organisieren, um die Bedeutung der Verfassung vom 3. Mai zu vermitteln und das Verständnis für die polnische Geschichte zu fördern. Dies kann durch Vorträge, Diskussionen, Workshops und andere pädagogische Aktivitäten geschehen.
+      <br><br>
+      Insgesamt bietet der 3. Mai den Menschen in Polen die Gelegenheit, Stolz auf ihre Geschichte und ihre Errungenschaften zu zeigen und die Ideale von Freiheit, Demokratie und nationaler Einheit zu feiern.
+    </p>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
