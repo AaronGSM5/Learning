@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aaron\\Desktop\\Learning\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj": {}
+    "C:\\Users\\Aaron\\Documents\\GitHub\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aaron\\Desktop\\Learning\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj": {
+    "C:\\Users\\Aaron\\Documents\\GitHub\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\Learning\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj",
+        "projectUniqueName": "C:\\Users\\Aaron\\Documents\\GitHub\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj",
         "projectName": "app",
-        "projectPath": "C:\\Users\\Aaron\\Desktop\\Learning\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj",
+        "projectPath": "C:\\Users\\Aaron\\Documents\\GitHub\\Learning\\Coding\\Learning-files\\Learning-Csharp\\app.csproj",
         "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\Desktop\\Learning\\Learning\\Coding\\Learning-files\\Learning-Csharp\\obj\\",
+        "outputPath": "C:\\Users\\Aaron\\Documents\\GitHub\\Learning\\Coding\\Learning-files\\Learning-Csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config"
