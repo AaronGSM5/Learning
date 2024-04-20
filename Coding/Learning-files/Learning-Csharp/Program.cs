@@ -8,6 +8,7 @@ namespace learning
       Console.WriteLine(age);
       Console.WriteLine(" /  |");
       Console.WriteLine("/___|");
+      Console.WriteLine("test!")
     }
   }
 }
