@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Thimble-Game</title>
+</head>
+<body>
+  <main>
+    <!-- BLUE THIMBLES -->
+    <div class="blue-drag">
+      <!-- BIG BLUE THIMBLES -->
+      	<div class="dragBox">
+          <img class="blue" id="big-blue-thimble-1" draggable="true" src="blue-thimbles/big.svg" ondragstart="drag(event, '3')">
+        </div>
+        <div class="dragBox">
+          <img class="blue" id="big-blue-thimble-2" draggable="true" src="blue-thimbles/big.svg" ondragstart="drag(event, '3')">
+        </div>
+        <div class="dragBox">
+          <img class="blue" id="big-blue-thimble-3" draggable="true" src="blue-thimbles/big.svg" ondragstart="drag(event, '3')">
+        </div>
+      <!-- MIDDLE BLUE THIMBLES -->
+        <div class="dragBox">
+          <img class="blue" id="middle-blue-thimble-1" draggable="true" src="blue-thimbles/middle.svg" ondragstart="drag(event, '2')">
+        </div>
+        <div class="dragBox">
+          <img class="blue" id="middle-blue-thimble-2" draggable="true" src="blue-thimbles/middle.svg" ondragstart="drag(event, '2')">
+        </div>
+        <div class="dragBox">
+          <img class="blue" id="middle-blue-thimble-3" draggable="true" src="blue-thimbles/middle.svg" ondragstart="drag(event, '2')">
+        </div>
+      <!-- SMALL BLUE THIMBLES -->
+        <div class="dragBox">
+          <img class="blue" id="small-blue-thimble-1" draggable="true" src="blue-thimbles/small.svg" ondragstart="drag(event, '1')">
+        </div>
+        <div class="dragBox">
+          <img class="blue" id="small-blue-thimble-2" draggable="true" src="blue-thimbles/small.svg" ondragstart="drag(event, '1')">
+        </div>
+        <div class="dragBox">
+          <img class="blue" id="small-blue-thimble-3" draggable="true" src="blue-thimbles/small.svg" ondragstart="drag(event, '1')">
+        </div>
+    </div>
+
+    <div id="game-grid">
+      <div class="cell" id="cell1"  ondrop="drop(event, 'cell1')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell2"  ondrop="drop(event, 'cell2')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell3"  ondrop="drop(event, 'cell3')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell4"  ondrop="drop(event, 'cell4')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell5"  ondrop="drop(event, 'cell5')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell6"  ondrop="drop(event, 'cell6')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell7"  ondrop="drop(event, 'cell7')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell8"  ondrop="drop(event, 'cell8')" ondragover="allowDrop(event)"></div>
+      <div class="cell" id="cell9"  ondrop="drop(event, 'cell9')" ondragover="allowDrop(event)"></div>
+  </div>
+
+       <!-- RED THIMBLES -->
+       <div class="red-drag">
+        <!-- BIG RED THIMBLES -->
+          <div class="dragBox">
+            <img class="red" id="big-red-thimble-1" draggable="true" src="red-thimbles/big.svg" ondragstart="drag(event, '3')">
+          </div>
+          <div class="dragBox">
+            <img class="red" id="big-red-thimble-2" draggable="true" src="red-thimbles/big.svg" ondragstart="drag(event, '3')">
+          </div>
+          <div class="dragBox">
+            <img class="red" id="big-red-thimble-3" draggable="true" src="red-thimbles/big.svg" ondragstart="drag(event, '3')">
+          </div>
+        <!-- MIDDLE RED THIMBLES -->
+          <div class="dragBox">
+            <img class="red" id="middle-red-thimble-1" draggable="true" src="red-thimbles/middle.svg" ondragstart="drag(event, '2')">
+          </div>
+          <div class="dragBox">
+            <img class="red" id="middle-red-thimble-2" draggable="true" src="red-thimbles/middle.svg" ondragstart="drag(event, '2')">
+          </div>
+          <div class="dragBox">
+            <img class="red" id="middle-red-thimble-3" draggable="true" src="red-thimbles/middle.svg" ondragstart="drag(event, '2')">
+          </div>
+        <!-- SMALL RED THIMBLES -->
+          <div class="dragBox">
+            <img class="red" id="small-red-thimble-1" draggable="true" src="red-thimbles/small.svg" ondragstart="drag(event, '1')">
+          </div>
+          <div class="dragBox">
+            <img class="red" id="small-red-thimble-2" draggable="true" src="red-thimbles/small.svg" ondragstart="drag(event, '1')">
+          </div>
+          <div class="dragBox">
+            <img class="red" id="small-red-thimble-3" draggable="true" src="red-thimbles/small.svg" ondragstart="drag(event, '1')">
+          </div>
+      </div>
+      <button>reset</button>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
