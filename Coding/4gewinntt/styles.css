@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(21, 0, 78);
+}
+
+.btn {
+    border: 1px solid black;
+    padding: 2vw;
+    transition: 0.2s;
+}
+.btn:active {
+    transform: scale(0.9);
+}
+
+#field-container {
+    width: 700px;
+    max-height: 100vh;
+    position: relative;
+}
+
+#field {
+    width: 100%;
+    aspect-ratio: 7/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cell{
+    background: radial-gradient(circle, rgba(255,255,255,0) 50%, rgba(55,8,214,1) 51%, rgba(57,0,212,1) 100%);
+    background-color: rgba(0,0,0,0);
+    aspect-ratio: 1;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.chip{
+    position: absolute;
+    background-color: red;
+    width: 90%;
+    aspect-ratio: 1;
+    z-index: -1;
+    border-radius: 10vb;
+    animation-name: top-to-row;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    border: 1.8vw blue solid;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: absolute;
+    background-color: rgb(38, 0, 141);
+}
+
+@keyframes top-to-row {
+    0% {top: -100vh}
+    50% {top: 0}
+    70% {top: -2vh}
+    100% {top: 50%; transform: translateY(-50%);}
+} 
+
+#win-screen {
+    position: absolute;
+    inset: -3vb;
+    border-radius: 2vb;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: grid;
+    color: white;
+    place-items: center;
+    transform: scale(0);
+}
+
+#win {
+    font-size: 2rem;
+    animation-name: win;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    text-align: center;
+}
+
+@keyframes win {
+    0% {font-size: 0rem;}
+    100% {font-size: 8rem;}
+}
+
+#reset-btn {
+    width: 30vw;
+    height: 10vh;
+    border-radius: 1vb;
+    background-color: rgb(10, 0, 146);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
